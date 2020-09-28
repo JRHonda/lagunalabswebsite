@@ -1,3 +1,23 @@
 .preListHeader {
     margin-top: 10px
 }
+
+.Col {
+    text-align: center;
+}
+
+.AppsRow {
+    margin: 8px;
+    height: 120px;
+}
+
+.appCircleImage {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: black 0px 0px 5px;
+}
+
+.appCircleImage:hover {
+    transform: scale(1.2);
+}

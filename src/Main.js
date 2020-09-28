@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Link, Switch} from 'react-router-dom';
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import Home from "./client/components/Home";
 import FitSurfer from "./client/components/FitSurfer";
+import Apps from "./client/components/Apps";
 
 
 const Main = () => {
@@ -15,9 +16,7 @@ const Main = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
-                            <NavDropdown title="Apps" id="basic-nav-dropdown">
-                                <Nav.Link as={Link} to="/apps/FitSurfer">FitSurfer</Nav.Link>
-                         </NavDropdown>
+                            <Nav.Link as={Link} to="/apps">Apps</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
@@ -26,7 +25,8 @@ const Main = () => {
             <div>
                 <Switch>
                     <Route exact path='/' component={Home} />
-                    <Route exact path='/apps/FitSurfer' component={FitSurfer} />
+                    <Route exact path='/Apps' component={Apps} />
+                    <Route exact path='/Apps/FitSurfer' component={FitSurfer} />
                     <Route render = { function () { return <p>Not found</p> } } />
                 </Switch>
             </div>
