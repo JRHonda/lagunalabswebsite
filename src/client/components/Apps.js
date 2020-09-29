@@ -11,13 +11,13 @@ const Apps =() => {
             <Container fluid>
                 <Row className={"AppsRow"}>
                     <Col className={"Col"}>
-                        <Nav.Link  href={"/Apps/FitSurfer"}><Image className={"appCircleImage"} src="FitSurfer_1024x1024.png" alt={"FitSurfer iOS Application"}></Image></Nav.Link>
+                        <Nav.Link  href={"/Apps/FitSurfer"}><Image className={"appCircleImage transition-all"} src={require("../assets/images/FitSurfer_1024x1024.png")} alt={"FitSurfer iOS Application"} /></Nav.Link>
                     </Col>
                     <Col className={"Col"}>
-                        <Nav.Link href={"/Apps/Navifit"}><Image className={"appCircleImage"} src="Navifit_1024x1024.png" alt={"Navifit iOS Application"}></Image></Nav.Link>
+                        <Nav.Link href={"/Apps/Navifit"}><Image className={"appCircleImage transition-all"} src={require("../assets/images/Navifit_1024x1024.png")} alt={"Navifit iOS Application"} /></Nav.Link>
                     </Col>
                     <Col className={"Col"}>
-                        <Nav.Link href={"/Apps/ProjectIntersect"}><Image className={"appCircleImage"} src="ProjectIntersect_1024x1024.png" alt={"Project Intersect iOS application"}></Image></Nav.Link>
+                        <Nav.Link href={"/Apps/ProjectIntersect"}><Image className={"appCircleImage transition-all"} src={require("../assets/images/ProjectIntersect_1024x1024.png")} alt={"Project Intersect iOS application"} /></Nav.Link>
                     </Col>
                 </Row>
 

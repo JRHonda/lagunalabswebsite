@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .preListHeader {
     margin-top: 10px
 }
@@ -20,4 +24,17 @@
 
 .appCircleImage:hover {
     transform: scale(1.2);
+}
+
+.appFeatureHeadline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transition-all {
+    transition: all .3s ease-in;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
 }
