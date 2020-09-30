@@ -32,9 +32,63 @@
 }
 
 .transition-all {
-    transition: all .3s ease-in;
+    transition: all 0.1s ease-out;
     transition-property: all;
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+.transition-featuresPlusSign {
+    transition: all .15s ease-in;
+    transition-property: all;
+    transition-duration: 0.15s;
     transition-timing-function: ease-in;
     transition-delay: 0s;
+}
+
+.plusSign {
+    min-height: 12px;
+    max-height: 12px;
+}
+
+.featuresContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 450px;
+}
+
+.featuresMainImage {
+    max-height: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.featuresMainImageCenter {
+    max-height: 400px;
+    padding: 10px;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.featuresAccordion {
+    width: 100%;
+}
+
+.productFeatures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.downloadOnTheAppStore {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
 }

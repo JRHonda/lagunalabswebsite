@@ -22,13 +22,13 @@ const AppFeatureCard = (props) => {
             <Card>
                 <Card.Header className={"appFeatureHeadline"}>
 
-                    <Accordion.Toggle as={Button} onClick={() => setIsCollapsed(!isCollapsed) } variant="link" eventKey={eventKey}>
+                    <Accordion.Toggle className={""} style={{textDecorationColor: "black"}} as={Button} onClick={() => setIsCollapsed(!isCollapsed) } variant="link" eventKey={eventKey}>
                         {headline}
                     </Accordion.Toggle>
 
-                    <Accordion.Toggle as={Button} onClick={() => toggleHeadingHandler() } variant="link" eventKey={eventKey}>
+                    <Accordion.Toggle className={""} as={Button} onClick={() => toggleHeadingHandler() } variant="link" eventKey={eventKey}>
 
-                        <Image id={"plus" + eventKey} className={"transition-all"} src={require("../assets/images/Plus.png")} alt={""}/>
+                        <Image id={"plus" + eventKey} className={"transition-featuresPlusSign plusSign"} src={require("../assets/images/plus22.5px.png")} alt={""}/>
 
                     </Accordion.Toggle>
 

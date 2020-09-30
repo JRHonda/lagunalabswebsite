@@ -7,46 +7,45 @@ import "../style.css"
 
 const FitSurfer = () => {
     return (
-        <div>
 
-            <Container>
-                <Row>
-                    <Col>
-                        <Image className={"appCircleImage"} src={require("../assets/images/FitSurfer_1024x1024.png")} alt={"FitSurfer iOS Application"} />
-                    </Col>
-                    <Col>
+        <div style={{opacity: "1", transform: "none", marginTop: "2rem"}}>
+
+            <Jumbotron>
+
+                <div>
+
+                    <div className={"container productFeatures"}>
                         <div>
-                            <Image src={require("../assets/images/FitSurferWorkoutPage@2x.png")} alt={"FitSurfer iOS Application"} fluid/>
-                            <Accordion>
-
-                                <AppFeatureCard headline={"Headline"} eventKey = "0" isCollapsed ={true} content={"Hello, World!"} />
-
-                                <Card>
-
-                                </Card>
-
-                                <Card>
-
-                                </Card>
-                            </Accordion>
+                            <h1>Product Features</h1>
+                            <ul>
+                                <li>Analyze wave count</li>
+                                <li>Record health data</li>
+                                <li>Health and Activity apps integration</li>
+                                <li>Animated data presenter</li>
+                            </ul>
                         </div>
 
-                    </Col>
-                </Row>
-            </Container>
+                        <div>
+                            <img className={"featuresMainImage"} src={require("../assets/images/FitSurferSessionsPage@2x.png")} alt={"FitSurfer iOS Application"} />
+                            <img className={"featuresMainImageCenter"} src={require("../assets/images/WorkoutIC@2x.png")} alt={"FitSurfer iOS Application"} />
+                            <img className={"featuresMainImage"} src={require("../assets/images/EndWorkoutIC@2x.png")} alt={"FitSurfer iOS Application"} />
+                        </div>
 
+                    </div>
+
+                </div>
+
+            </Jumbotron>
+
+            <div className={"container"} style={{display: "flex", justifyContent: "center"}}>
+                <a href={"https://apps.apple.com/tt/app/fitsurfer/id1532609266?ign-mpt=uo%3D2"}>
+                    <img src={require("../assets/images/downloadOnTheAppStore@3x.png")} alt={""} />
+                    <img style={{width: "100px", height: "100px", marginLeft: "10px"}} src={require("../assets/images/FitSurfer_1024x1024.png")} alt={""} />
+                </a>
+            </div>
 
         </div>
     );
 };
 
 export default FitSurfer;
-
-// {/*<Tabs defaultActiveKey="features" id="uncontrolled-tab-example">*/}
-// {/*    <Tab eventKey="features" title="Features">*/}
-// {/*        <h1>🚧 Under Construction 🚧</h1>*/}
-// {/*    </Tab>*/}
-// {/*    <Tab eventKey="privacyPolicy" title="Policy">*/}
-// {/*        <FitSurferPrivacyPolicy />*/}
-// {/*    </Tab>*/}
-// {/*</Tabs>*/}
